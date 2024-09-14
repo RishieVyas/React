@@ -1,4 +1,68 @@
-#heading {
-    color: red;
-    font-size: 50px;
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.logo > img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.restaurant-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.restaurant-card:hover {
+    background-color:lightgray;
+}
+
+.restaurant-card > img {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.searchBar {
+    margin: 10px 0;
+    border: 1px solid black;
+} 
+
+.restaurant-container {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+}
+
+.restaurant-card-footer {
+    padding: 5px;
+}
+
+.restaurant-card-footer > h4 {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+}
+
+.restaurant-card-footer > p {
+    font-size: 15px;
+    margin: 0;
+    color: green;
 }
