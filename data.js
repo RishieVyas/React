@@ -150,14 +150,6 @@ const restaurants = [
     img: continental,
   },
   {
-    id: "19",
-    name: "Gourmet Burgers",
-    cuisine: "American",
-    rating: "4.2",
-    approxBillForOne: "17$",
-    img: italian,
-  },
-  {
     id: "20",
     name: "Pho Corner",
     cuisine: "Vietnamese",
