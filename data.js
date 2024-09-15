@@ -165,14 +165,6 @@ const restaurants = [
     approxBillForOne: "18$",
     img: continental,
   },
-  {
-    id: "18",
-    name: "Sushi Express",
-    cuisine: "Japanese",
-    rating: "4.4",
-    approxBillForOne: "24$",
-    img: chinese,
-  },
 ];
 
 export default restaurants;
