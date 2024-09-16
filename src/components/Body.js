@@ -4,10 +4,10 @@ import RestaurantCard from "./RestaurantCard";
 const Body = () => {
   return (
     <div className="body">
-      <div className="searchBar">Search</div>
+      <div className="searchBar"> Search</div>
       <div className="restaurant-container">
         {restaurants.map((res) => (
-          <RestaurantCard res={res} />
+          <RestaurantCard key={res.id} res={res} />
         ))}
       </div>
     </div>
