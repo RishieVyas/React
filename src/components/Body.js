@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import restaurants from "../../data";
 import RestaurantCard from "./RestaurantCard";
 
@@ -15,8 +15,11 @@ const Body = () => {
 
   const onSearchInput = (val) => {
     setSearchText(val.target.value);
-    filterRes();
   };
+
+  useEffect(() => {
+    filterRes();
+  }, [searchText]);
 
   return (
     <div className="body">
