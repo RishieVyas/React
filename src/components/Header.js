@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src={require("./assets/seoulLogo.png")} />
+        <img src={require("../../assets/seoulLogo.png")} />
       </div>
       <div className="nav-items">
         <ul>
