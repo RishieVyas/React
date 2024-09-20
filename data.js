@@ -150,6 +150,14 @@ const restaurants = [
     img: continental,
   },
   {
+    id: "19",
+    name: "Barbecue Nation",
+    cuisine: "Asian",
+    rating: "4.8 | 05-10 mins",
+    approxBillForOne: "20$",
+    img: italian,
+  },
+  {
     id: "20",
     name: "Pho Corner",
     cuisine: "Vietnamese",
