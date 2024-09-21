@@ -6,7 +6,7 @@ import mexican from "./assets/mexican.png";
 
 const restaurants = [
   {
-    id: "1",
+    resId: "1",
     name: "Spice 6",
     cuisine: "Indian",
     rating: "4.4 | 15-20 mins",
@@ -14,7 +14,7 @@ const restaurants = [
     img: biryani,
   },
   {
-    id: "2",
+    resId: "2",
     name: "Pizza Palace",
     cuisine: "Italian",
     rating: "4.2 | 15-20 mins",
@@ -22,7 +22,7 @@ const restaurants = [
     img: chinese,
   },
   {
-    id: "3",
+    resId: "3",
     name: "Sushi World",
     cuisine: "Japanese",
     rating: "4.6 | 15-20 mins",
@@ -30,7 +30,7 @@ const restaurants = [
     img: continental,
   },
   {
-    id: "4",
+    resId: "4",
     name: "Burger Town",
     cuisine: "American",
     rating: "4.1 | 15-20 mins",
@@ -38,7 +38,7 @@ const restaurants = [
     img: italian,
   },
   {
-    id: "5",
+    resId: "5",
     name: "Taco Fiesta",
     cuisine: "Mexican",
     rating: "4.3  | 15-20 mins",
@@ -46,7 +46,7 @@ const restaurants = [
     img: mexican,
   },
   {
-    id: "6",
+    resId: "6",
     name: "Noodle House",
     cuisine: "Chinese",
     rating: "4.5  | 15-20 mins",
@@ -54,15 +54,15 @@ const restaurants = [
     img: chinese,
   },
   {
-    id: "7",
+    resId: "7",
     name: "The Kebab Factory",
-    cuisine: "Middle Eastern",
+    cuisine: "MresIddle Eastern",
     rating: "4.7 | 15-20 mins",
     approxBillForOne: "24$",
     img: biryani,
   },
   {
-    id: "8",
+    resId: "8",
     name: "Pasta Delight",
     cuisine: "Italian",
     rating: "4.0 | 15-20 mins",
@@ -70,7 +70,7 @@ const restaurants = [
     img: italian,
   },
   {
-    id: "9",
+    resId: "9",
     name: "Curry Corner",
     cuisine: "Indian",
     rating: "4.3 | 15-20 mins",
@@ -78,7 +78,7 @@ const restaurants = [
     img: biryani,
   },
   {
-    id: "10",
+    resId: "10",
     name: "Dim Sum Hub",
     cuisine: "Chinese",
     rating: "4.5 | 15-20 mins",
@@ -86,7 +86,7 @@ const restaurants = [
     img: chinese,
   },
   {
-    id: "11",
+    resId: "11",
     name: "Burger Bros",
     cuisine: "American",
     rating: "4.2 | 15-20 mins",
@@ -94,15 +94,15 @@ const restaurants = [
     img: italian,
   },
   {
-    id: "12",
+    resId: "12",
     name: "Falafel Feast",
-    cuisine: "Middle Eastern",
+    cuisine: "MresIddle Eastern",
     rating: "4.4 | 15-20 mins",
     approxBillForOne: "18$",
     img: continental,
   },
   {
-    id: "13",
+    resId: "13",
     name: "Tempura House",
     cuisine: "Japanese",
     rating: "4.6 | 15-20 mins",
@@ -110,7 +110,7 @@ const restaurants = [
     img: continental,
   },
   {
-    id: "14",
+    resId: "14",
     name: "Pizza Express",
     cuisine: "Italian",
     rating: "4.1 | 15-20 mins",
@@ -118,7 +118,7 @@ const restaurants = [
     img: italian,
   },
   {
-    id: "15",
+    resId: "15",
     name: "Thai Spice",
     cuisine: "Thai",
     rating: "4. | 15-20 mins",
@@ -126,7 +126,7 @@ const restaurants = [
     img: continental,
   },
   {
-    id: "16",
+    resId: "16",
     name: "Tandoori Flame",
     cuisine: "Indian",
     rating: "4.7 | 15-20 mins",
@@ -134,7 +134,7 @@ const restaurants = [
     img: biryani,
   },
   {
-    id: "17",
+    resId: "17",
     name: "Salsa Grill",
     cuisine: "Mexican",
     rating: "4.3 | 15-20 mins",
@@ -142,7 +142,7 @@ const restaurants = [
     img: mexican,
   },
   {
-    id: "18",
+    resId: "18",
     name: "Sushi Express",
     cuisine: "Japanese",
     rating: "4.4 | 15-20 mins",
@@ -150,7 +150,7 @@ const restaurants = [
     img: continental,
   },
   {
-    id: "19",
+    resId: "19",
     name: "Barbecue Nation",
     cuisine: "Asian",
     rating: "4.8 | 05-10 mins",
@@ -158,7 +158,7 @@ const restaurants = [
     img: italian,
   },
   {
-    id: "20",
+    resId: "20",
     name: "Pho Corner",
     cuisine: "Vietnamese",
     rating: "4.6 | 15-20 mins",

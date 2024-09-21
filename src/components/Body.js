@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import restaurants from "../../data";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [searchText, setSearchText] = useState("");
@@ -34,7 +35,9 @@ const Body = () => {
       </div>
       <div className="restaurant-container">
         {listOfRes.map((res) => (
-          <RestaurantCard key={res.id} res={res} />
+          <Link key={res.resId} to={"/restaurants/" + res.resId}>
+            <RestaurantCard res={res} />
+          </Link>
         ))}
       </div>
     </div>
