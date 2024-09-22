@@ -7,11 +7,19 @@ class User extends React.Component {
     this.state = {
       srNumber: 1,
     };
+
+    console.log("Child constructor called");
+  }
+
+  componentDidMount() {
+    console.log("Child component did mount is called");
   }
 
   render() {
     const { name, location, contact } = this.props;
     const { srNumber } = this.state;
+
+    console.log("Child render is called");
 
     return (
       <div className="user-card">

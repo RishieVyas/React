@@ -114,4 +114,8 @@
     z-index: 1000;
     min-height: 100px;
   }
+
+  .about-container {
+    margin: 20px 0 0 40px;
+  }
   
