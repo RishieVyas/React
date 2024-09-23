@@ -19,9 +19,22 @@ class About extends React.Component {
         <h2>About Us</h2>
         <p>This is about us page</p>
         <User
-          name={"Rishi Vyas"}
+          name={"First Vyas"}
           location={"College Park"}
           contact={"abcret@gmail.com"}
+          role={"Front End Developer"}
+        />
+        <User
+          name={"Second Vyas"}
+          location={"College Park"}
+          contact={"abcret@gmail.com"}
+          role={"Back End Developer"}
+        />
+        <User
+          name={"Third Vyas"}
+          location={"College Park"}
+          contact={"abcret@gmail.com"}
+          role={"Devops Engineer"}
         />
       </div>
     );

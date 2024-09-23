@@ -1,4 +1,5 @@
 import React from "react";
+import UserDetails from "./UserDetails";
 
 class User extends React.Component {
   constructor(props) {
@@ -8,18 +9,18 @@ class User extends React.Component {
       srNumber: 1,
     };
 
-    console.log("Child constructor called");
+    console.log(this.props.name + "Child constructor called");
   }
 
   componentDidMount() {
-    console.log("Child component did mount is called");
+    console.log(this.props.name + "Child component did mount is called");
   }
 
   render() {
-    const { name, location, contact } = this.props;
+    const { name, location, contact, role } = this.props;
     const { srNumber } = this.state;
 
-    console.log("Child render is called");
+    console.log(this.props.name + "Child render is called");
 
     return (
       <div className="user-card">
@@ -37,6 +38,7 @@ class User extends React.Component {
         </button>
         <p> Location: {location} </p>
         <p> Contact: {contact} </p>
+        <UserDetails role={role} />
       </div>
     );
   }
