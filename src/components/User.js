@@ -1,5 +1,4 @@
 import React from "react";
-import UserDetails from "./UserDetails";
 
 class User extends React.Component {
   constructor(props) {
@@ -7,20 +6,30 @@ class User extends React.Component {
 
     this.state = {
       srNumber: 1,
+      userInfo: {
+        name: "",
+        location: "",
+        avatar_url: "",
+      },
     };
 
-    console.log(this.props.name + "Child constructor called");
+    console.log("Child constructor called");
   }
 
-  componentDidMount() {
-    console.log(this.props.name + "Child component did mount is called");
+  async componentDidMount() {
+    const res = await fetch("https://api.github.com/users/RishieVyas");
+    const json = await res.json();
+
+    this.setState({
+      userInfo: json,
+    });
+    console.log("Child component did mount is called", json);
   }
 
   render() {
-    const { name, location, contact, role } = this.props;
+    const { name, location, avatar_url } = this.state.userInfo;
     const { srNumber } = this.state;
-
-    console.log(this.props.name + "Child render is called");
+    console.log("Child render is called");
 
     return (
       <div className="user-card">
@@ -37,8 +46,7 @@ class User extends React.Component {
           Increase the number
         </button>
         <p> Location: {location} </p>
-        <p> Contact: {contact} </p>
-        <UserDetails role={role} />
+        <img src={avatar_url} />
       </div>
     );
   }
