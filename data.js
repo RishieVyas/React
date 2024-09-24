@@ -12,6 +12,7 @@ const restaurants = [
     rating: "4.4 | 15-20 mins",
     approxBillForOne: "20$",
     img: biryani,
+    promoted: true,
   },
   {
     resId: "2",
@@ -20,6 +21,7 @@ const restaurants = [
     rating: "4.2 | 15-20 mins",
     approxBillForOne: "18$",
     img: chinese,
+    promoted: false,
   },
   {
     resId: "3",
@@ -28,6 +30,7 @@ const restaurants = [
     rating: "4.6 | 15-20 mins",
     approxBillForOne: "25$",
     img: continental,
+    promoted: true,
   },
   {
     resId: "4",
@@ -36,6 +39,7 @@ const restaurants = [
     rating: "4.1 | 15-20 mins",
     approxBillForOne: "15$",
     img: italian,
+    promoted: false,
   },
   {
     resId: "5",
@@ -44,6 +48,7 @@ const restaurants = [
     rating: "4.3  | 15-20 mins",
     approxBillForOne: "12$",
     img: mexican,
+    promoted: true,
   },
   {
     resId: "6",
@@ -52,6 +57,7 @@ const restaurants = [
     rating: "4.5  | 15-20 mins",
     approxBillForOne: "22$",
     img: chinese,
+    promoted: true,
   },
   {
     resId: "7",
@@ -60,6 +66,7 @@ const restaurants = [
     rating: "4.7 | 15-20 mins",
     approxBillForOne: "24$",
     img: biryani,
+    promoted: false,
   },
   {
     resId: "8",
@@ -68,6 +75,7 @@ const restaurants = [
     rating: "4.0 | 15-20 mins",
     approxBillForOne: "17$",
     img: italian,
+    promoted: true,
   },
   {
     resId: "9",
@@ -76,6 +84,7 @@ const restaurants = [
     rating: "4.3 | 15-20 mins",
     approxBillForOne: "19$",
     img: biryani,
+    promoted: false,
   },
   {
     resId: "10",
@@ -84,6 +93,7 @@ const restaurants = [
     rating: "4.5 | 15-20 mins",
     approxBillForOne: "21$",
     img: chinese,
+    promoted: true,
   },
   {
     resId: "11",
@@ -92,6 +102,7 @@ const restaurants = [
     rating: "4.2 | 15-20 mins",
     approxBillForOne: "16$",
     img: italian,
+    promoted: false,
   },
   {
     resId: "12",
@@ -100,6 +111,7 @@ const restaurants = [
     rating: "4.4 | 15-20 mins",
     approxBillForOne: "18$",
     img: continental,
+    promoted: true,
   },
   {
     resId: "13",
@@ -108,6 +120,7 @@ const restaurants = [
     rating: "4.6 | 15-20 mins",
     approxBillForOne: "23$",
     img: continental,
+    promoted: true,
   },
   {
     resId: "14",
@@ -116,6 +129,7 @@ const restaurants = [
     rating: "4.1 | 15-20 mins",
     approxBillForOne: "15$",
     img: italian,
+    promoted: false,
   },
   {
     resId: "15",
@@ -124,6 +138,7 @@ const restaurants = [
     rating: "4. | 15-20 mins",
     approxBillForOne: "20$",
     img: continental,
+    promoted: true,
   },
   {
     resId: "16",
@@ -132,6 +147,7 @@ const restaurants = [
     rating: "4.7 | 15-20 mins",
     approxBillForOne: "22$",
     img: biryani,
+    promoted: false,
   },
   {
     resId: "17",
@@ -140,6 +156,7 @@ const restaurants = [
     rating: "4.3 | 15-20 mins",
     approxBillForOne: "13$",
     img: mexican,
+    promoted: false,
   },
   {
     resId: "18",
@@ -148,6 +165,7 @@ const restaurants = [
     rating: "4.4 | 15-20 mins",
     approxBillForOne: "24$",
     img: continental,
+    promoted: false,
   },
   {
     resId: "19",
@@ -156,6 +174,7 @@ const restaurants = [
     rating: "4.8 | 05-10 mins",
     approxBillForOne: "20$",
     img: italian,
+    promoted: false,
   },
   {
     resId: "20",
@@ -164,6 +183,7 @@ const restaurants = [
     rating: "4.6 | 15-20 mins",
     approxBillForOne: "18$",
     img: continental,
+    promoted: false,
   },
 ];
 

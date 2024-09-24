@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import restaurants from "../../data";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { PromotedRestaurant } from "./RestaurantCard";
 import { Link } from "react-router-dom";
 
 const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [listOfRes, setListOfRes] = useState(restaurants);
+
+  const RestaurantCardPromoted = PromotedRestaurant(RestaurantCard);
 
   const filterRes = () => {
     const filteredRes = restaurants.filter((e) =>
@@ -36,7 +38,11 @@ const Body = () => {
       <div className="restaurant-container">
         {listOfRes.map((res) => (
           <Link key={res.resId} to={"/restaurants/" + res.resId}>
-            <RestaurantCard res={res} />
+            {res.promoted ? (
+              <RestaurantCardPromoted res={res} />
+            ) : (
+              <RestaurantCard res={res} />
+            )}
           </Link>
         ))}
       </div>
