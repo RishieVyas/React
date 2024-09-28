@@ -1,33 +1,30 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import resMenu from "../../resMenu";
 
 const ResMenu = () => {
   const param = useParams();
   console.log("params --->", param);
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
-    const response = await fetch("/Menu.json");
-    console.log("response", response);
-
-    const data = await response.json();
-    console.log("data -> ", data);
-  };
-
   return (
-    <div>
-      <h1>Name of the Restaurant</h1>
-      <h2>Menu</h2>
-      <ul>
-        <li>Biryani</li>
-        <li>Burger</li>
-        <li>Pizza</li>
-        <li>Pasta</li>
-        <li>Dosa</li>
-      </ul>
+    <div key={param.resId} className="text-center">
+      {resMenu.map((menu) => {
+        return (
+          <div key={menu.id}>
+            <h1 className="font-bold p-5 text-xl">{menu.name}</h1>
+            <p>Menu</p>
+            {menu.menu.map((x) =>
+              x.items.map((y) => {
+                return (
+                  <ul key={y.id}>
+                    <li>{y.name}</li>
+                  </ul>
+                );
+              })
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };

@@ -1,0 +1,154 @@
+const resMenu = [
+  {
+    id: "1",
+    name: "Spice Haven",
+    cuisine: "Indian",
+    rating: 4.7,
+    total_reviews: 1200,
+    address: {
+      street: "123 Curry Lane",
+      city: "New York",
+      state: "NY",
+      zip_code: "10001",
+      latitude: 40.7128,
+      longitude: -74.005,
+    },
+    eta: {
+      min_time: 25,
+      max_time: 35,
+    },
+    contact_info: {
+      phone: "+1 234-567-8901",
+      email: "contact@spicehaven.com",
+      website: "http://spicehaven.com",
+    },
+    operating_hours: {
+      monday: "11:00 AM - 11:00 PM",
+      tuesday: "11:00 AM - 11:00 PM",
+      wednesday: "11:00 AM - 11:00 PM",
+      thursday: "11:00 AM - 11:00 PM",
+      friday: "11:00 AM - 12:00 AM",
+      saturday: "11:00 AM - 12:00 AM",
+      sunday: "11:00 AM - 10:00 PM",
+    },
+    menu: [
+      {
+        category: "Appetizers",
+        items: [
+          {
+            id: "101",
+            name: "Samosa",
+            description: "Crispy pastry filled with spiced potatoes and peas",
+            price: 5.99,
+            is_vegetarian: true,
+            is_gluten_free: false,
+          },
+          {
+            id: "102",
+            name: "Paneer Tikka",
+            description: "Grilled paneer cubes marinated with spices",
+            price: 8.99,
+            is_vegetarian: true,
+            is_gluten_free: true,
+          },
+        ],
+      },
+      {
+        category: "Main Course",
+        items: [
+          {
+            id: "201",
+            name: "Butter Chicken",
+            description: "Grilled chicken in a creamy tomato sauce",
+            price: 14.99,
+            is_vegetarian: false,
+            is_gluten_free: true,
+          },
+          {
+            id: "202",
+            name: "Palak Paneer",
+            description: "Paneer cubes in spinach gravy",
+            price: 13.99,
+            is_vegetarian: true,
+            is_gluten_free: true,
+          },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          {
+            id: "301",
+            name: "Mango Lassi",
+            description: "A sweetened yogurt drink with mango",
+            price: 3.99,
+            is_vegetarian: true,
+            is_gluten_free: true,
+          },
+          {
+            id: "302",
+            name: "Masala Chai",
+            description: "Spiced Indian tea with milk",
+            price: 2.99,
+            is_vegetarian: true,
+            is_gluten_free: true,
+          },
+        ],
+      },
+    ],
+    reviews: [
+      {
+        review_id: "r001",
+        user: {
+          name: "John Doe",
+          profile_pic: "http://example.com/john.jpg",
+        },
+        rating: 5,
+        comment: "Amazing food! The butter chicken was incredible.",
+        date: "2024-09-17",
+      },
+      {
+        review_id: "r002",
+        user: {
+          name: "Jane Smith",
+          profile_pic: "http://example.com/jane.jpg",
+        },
+        rating: 4,
+        comment: "Great service but a bit pricey.",
+        date: "2024-09-16",
+      },
+    ],
+    promotions: [
+      {
+        id: "p001",
+        description: "20% off on orders above $50",
+        valid_until: "2024-09-30",
+      },
+      {
+        id: "p002",
+        description: "Free delivery on weekends",
+        valid_until: "2024-10-15",
+      },
+    ],
+    delivery_options: {
+      is_free_delivery: false,
+      delivery_fee: 4.99,
+      minimum_order: 15,
+    },
+    payment_methods: ["Credit Card", "PayPal", "Cash on Delivery"],
+    popular_items: [
+      {
+        id: "201",
+        name: "Butter Chicken",
+        rating: 4.9,
+      },
+      {
+        id: "101",
+        name: "Samosa",
+        rating: 4.8,
+      },
+    ],
+  },
+];
+
+export default resMenu;
