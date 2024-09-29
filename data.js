@@ -185,6 +185,15 @@ const restaurants = [
     img: continental,
     promoted: false,
   },
+  {
+    resId: "21",
+    name: "Pho Corner",
+    cuisine: "Vietnamese",
+    rating: "4.6 | 15-20 mins",
+    approxBillForOne: "18$",
+    img: continental,
+    promoted: false,
+  },
 ];
 
 export default restaurants;
